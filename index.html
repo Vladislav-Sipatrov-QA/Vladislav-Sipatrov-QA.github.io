@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя визитка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+        <nav id="navbar" class="navbar" style="background-image: url('bg.jpg'); background-size: cover;">
+                <div class="logo">Sipatrov Vladislav
+                <ul class="navbar_nav">
+                    <li><a href="#home">Главная</a></li>
+                    <li><a href="#about">О себе</a></li>
+                    <li><a href="#portfolio">Стек технологий</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                </div>
+        </nav>
+
+<body style="background-image: url('bg.jpg'); background-size: cover;">
+    <div class="container" id="home">
+        <div class="avatar"></div>
+        <h1>Сипатров Владислав</h1>
+        <p style="font-weight: bold;">Привет!<p>
+        <p>Я QA инженер, тестировщик в области функционального и нефункционального тестирования программного обеспечения. Если Вы ищете классного тестировщика с развитыми soft и hard скиллами, то я идеально подхожу Вам! 
+        <p>Если хотите со мной связаться, то все контакты есть в нижней части сайта!</p>
+    </div>
+
+    <div class="container" id="about">
+        <h2>О себе</h2>
+        <p class="about_p">На момент создания сайта, мне 26 лет. Тут будет информация про опыт работы.</p>
+        <p class="about_p">В свободное от работы время стараюсь повышать квалификацию, регулярно прохожу курсы (например на Stepik), читаю статьи на Habr. Также уделяю время спорту и моим любимым питмоцам. Кстати, если хотите их увидеть нажмите на "Буп" 
+        </p>
+        <div class="kot">
+            <button type="submit" onclick="showImage()">Буп</button>
+            <img id="myImage" style="display:none" src="basya.jpg">
+                <script>
+                    function showImage() {
+                        var elem = document.getElementById('myImage');
+                        var style = getComputedStyle(elem);
+                    if (style.display === 'none'){
+                         document.getElementById('myImage').style.display = 'block';
+                    } else if (style.display !== 'none') {
+                         document.getElementById('myImage').style.display = 'none';    
+                    }
+                }
+                </script>
+        </div>
+        <div class="pes">        
+            <button type="submit" onclick="showImage1()">Буп</button>
+            <img id="myImage1" style="display:none" src="rokki.jpg">
+                <script>
+                function showImage1() {
+                    var elem = document.getElementById('myImage1');
+                    var style = getComputedStyle(elem);
+                if (style.display === 'none'){
+                    document.getElementById('myImage1').style.display = 'block';
+                } else if (style.display !== 'none') {
+                    document.getElementById('myImage1').style.display = 'none';    
+                }
+            }
+                </script>
+        </div>
+    </div>
+    <div class="portfolio">
+        <div class="conteiner" id="portfolio">
+            <h2 class="portfolio_header">Мои навыки и стек</h2>
+
+            <!-- portfolio_cards_wrapper -->
+            <div class="portfolio_cards_wrapper">
+              
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./devTools.png" alt="DevTools">
+                <h3 class="card_title">DevTools</h3>
+                <p>Расширение браузера, для тестирования frontа и прсомотра ручек</p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./postman.svg" alt="Postman">
+                <h3 class="card_title">Postman</h3>
+                <p> Можно отправлять запросы к API, чтобы тестировать и документировать работу бэкенда сайта</p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./swagger.png" alt="Swagger">
+                <h3 class="card_title">Swagger</h3>
+                <p>Для тестирования Rest-API и документации по API.</p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./jira.svg" alt="Jira">
+                <h3 class="card_title">Jira</h3>
+                <p>Таск трекер для организации работы и написание багрепортов</p>
+            </div>
+            <!-- // Card -->
+
+             <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./yandex.png" alt="YandexTracker">
+                <h3 class="card_title">Yandex Tracker</h3>
+                <p>Таск трекер для организации работы и написание багрепортов</p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./soap.png" alt="SoapUI">
+                <h3 class="card_title">SoapUI</h3>
+                <p>Для тестирования веб-сервисов сервис-ориентированных архитектур SOAP</p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./pgre.svg" alt="PostgreSQL">
+                <h3 class="card_title">PostgreSQL</h3>
+                <p>Просмотр данных в БД и написание SQL-запросов./p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./dbeaver.png" alt="DBeaver">
+                <h3 class="card_title">DBeaver</h3>
+                <p>Для работы с реляционными базами данных</p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./mongo.png" alt="MongoDB Compass ">
+                <h3 class="card_title">Compass</h3>
+                <p>Просмотр данных в MongoDB и написание NoSQL-запросов</p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./test.png" alt="Test IT">
+                <h3 class="card_title">Test IT</h3>
+                <p>Написание тест-кейсов и формирование отчетов по тестированию</p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./miro.png" alt="Miro">
+                <h3 class="card_title">Miro</h3>
+                <p>Написание чек-листов</p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./charles.png" alt="Charles">
+                <h3 class="card_title">Charles</h3>
+                <p>Тестирование front-end / back-end</p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./kibana.png" alt="Kibana">
+                <h3 class="card_title">Kibana</h3>
+                <p>Просмотр логов приложений</p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./sentry.png" alt="Sentry">
+                <h3 class="card_title">Sentry</h3>
+                <p>Просмотр логов приложений, локализация бага</p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./kafka.png" alt="Apache Kafka">
+                <h3 class="card_title">Apache Kafka</h3>
+                <p>Работа с очередью</p>
+            </div>
+            <!-- // Card -->
+            
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./figma.png" alt="Figma">
+                <h3 class="card_title">Figma</h3>
+                <p>Тестирование user-interface front-end</p>
+            </div>
+            <!-- // Card -->
+
+             <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./pixel.jpg" alt="Pixel Perfect">
+                <h3 class="card_title">Pixel Perfect</h3>
+                <p>Тестирование user-interface front-end</p>
+            </div>
+            <!-- // Card -->
+
+            <!-- Card -->
+            <div class="card">
+                <img class="card_img" src="./html.png" alt="HTML, CSS">
+                <h3 class="card_title">HTML, CSS</h3>
+                <p>Тестирование front-end</p>
+            </div>
+            <!-- // Card -->
+
+
+        </div>
+        <!--// portfolio_cards_wrapper -->
+            
+      </div>
+
+        <!-- Повторите блок для каждой программы -->
+    </div>
+
+<footer class="footer" id="footer">
+    <div class="contact" id="contact">
+        <a href="tel:+79874416289">
+            <img class="footer_img" src="./phone.png" alt="Phone">
+        </a>
+    
+        <a href="mailto:vladislavsipatrov@gmail.com">
+            <img class="footer_img" src="./mail.png" alt="Email">
+        </a>
+    
+        <a href="https://t.me/+79874416289" target="_blank">
+            <img class="footer_img" src="./tg.png" alt="Telegram">
+        </a>
+    
+        <a href="https://github.com/alice-palauskas-qa" target="_blank">
+            <img class="footer_img" src="./github.png" alt="Github">
+        </a>    
+    </div>
+</footer>
+ <script src="javas.js"></script>
+</body>
+
+</html>
